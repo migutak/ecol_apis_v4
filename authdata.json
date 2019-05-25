@@ -1,0 +1,20 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 3,
+    "ACL": 1,
+    "Admin": 3
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "LFoG2mE2oXAXLKrdGmEDZXKYrOM2IgPZu5qFAR5lAXywIRFJfr0LI1mQrTEYnzWJ": "{\"id\":\"LFoG2mE2oXAXLKrdGmEDZXKYrOM2IgPZu5qFAR5lAXywIRFJfr0LI1mQrTEYnzWJ\",\"ttl\":1209600,\"created\":\"2019-04-17T13:31:08.072Z\",\"userId\":2}",
+      "e2nvuj9XpuleNmQbpw9Vf3wTGTCw9UAiOdZyE3e0LJEPzG36zegkkquaZKChtNBX": "{\"id\":\"e2nvuj9XpuleNmQbpw9Vf3wTGTCw9UAiOdZyE3e0LJEPzG36zegkkquaZKChtNBX\",\"ttl\":1209600,\"created\":\"2019-04-17T13:31:20.069Z\",\"userId\":2}"
+    },
+    "ACL": {},
+    "Admin": {
+      "1": "{\"password\":\"$2a$10$Kkq87QRnHv6wYIOqs4Eur.OmRXt6n32AfagmO9lrHUeMES/I7vKLu\",\"email\":\"admin@alahli.com\",\"id\":1}",
+      "2": "{\"password\":\"$2a$10$HePlsJwfx1rYlkFV4GxpBeGu.oROA8gzDkk2qb2yiBw5rPcXhUUQO\",\"email\":\"kevin@alahli.com\",\"id\":2}"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "sms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "smsid": {
+      "type": "number",
+      "id": true
+    },
+    "custnumber": {
+      "type": "string",
+      "required": true
+    },
+    "owner": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "arrears": {
+      "type": "number"
+    },
+    "datesent": {
+      "type": "date"
+    },
+    "sent": {
+      "type": "string",
+      "default": "N"
+    },
+    "telnumber": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

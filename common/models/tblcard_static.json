@@ -1,0 +1,132 @@
+{
+  "name": "tblcard_static",
+  "plural": "tblcard_static",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardnumber": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "oracle": {
+        "columnName": "CARDNUMBER",
+        "dataType": "VARCHAR",
+        "dataLength": 40,
+        "nullable": "N"
+      }
+    },
+    "accountno": {
+      "type": "string",
+      "required": false
+    },
+    "cardacct": {
+      "type": "string"
+    },
+    "cardname": {
+      "type": "string"
+    },
+    "sqnumber": {
+      "type": "number"
+    },
+    "marital": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "branchstatus": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "number"
+    },
+    "curing": {
+      "type": "string"
+    },
+    "email": {
+      "type": "date"
+    },
+    "daysinarrears": {
+      "type": "number"
+    },
+    "salary": {
+      "type": "number"
+    },
+    "excuse": {
+      "type": "string"
+    },
+    "accplan": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "routetostate": {
+      "type": "string"
+    },
+    "colofficer": {
+      "type": "string"
+    },
+    "rpcode": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "empstatus": {
+      "type": "string"
+    },
+    "fileno": {
+      "type": "string"
+    },
+    "reviewdate": {
+      "type": "date"
+    },
+    "basesupp": {
+      "type": "string"
+    },
+    "empdate": {
+      "type": "string"
+    },
+    "collectionstatus": {
+      "type": "string"
+    },
+    "datereceived": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "cprimary": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "lastactiondate": {
+      "type": "date"
+    },
+    "residential": {
+      "type": "string"
+    },
+    "datelastupdated": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,15 @@
+--- deploys
+
+- add cure/lastactiondate to qall and model
+- create branchstatus
+- party, collectoraction, cure, excuse tables and model
+- 
+- multiple ptp
+route for reviewers with search
+send letter from activity page
+email alert to reviewers on route
+ptpdate remove required
+
+new deptcollateral add id
+trigger to add to bu
+deptcollateralbu

@@ -1,0 +1,34 @@
+{
+  "oracle": {
+    "host": "192.168.78.149",
+    "port": 1521,
+    "database": "ecol",
+    "password": "ecol",
+    "name": "oracle",
+    "tns": "",
+    "user": "ecol",
+    "connector": "oracle"
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "migutak@gmail.com",
+          "pass": "123@Today"
+        }
+      }
+    ]
+  },
+  "db": {
+    "name": "db",
+    "localStorage": "",
+    "file": "authdata.json",
+    "connector": "memory"
+  }
+}
