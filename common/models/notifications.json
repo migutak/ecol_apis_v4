@@ -1,13 +1,14 @@
 {
   "name": "notifications",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
     "brokenptp": {
-      "type": "number"
+      "type": "number",
+      "id": true
     },
     "overdue": {
       "type": "number"

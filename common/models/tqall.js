@@ -47,6 +47,7 @@ module.exports = function (tqall) {
               { accnumber: { like: '%' + searchtext.toUpperCase() + '%' } },
               { client_name: { like: '%' + searchtext.toUpperCase() + '%' } },
               { arocode: { like: '%' + searchtext.toUpperCase() + '%' } },
+              { rrocode: { like: '%' + searchtext.toUpperCase() + '%' } },
               { custnumber: { like: '%' + searchtext.toUpperCase() + '%' } },
               { branchname: { like: '%' + searchtext.toUpperCase() + '%' } },
               { colofficer: { like: '%' + searchtext.toLowerCase() + '%' } },
