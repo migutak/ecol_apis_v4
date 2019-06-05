@@ -132,9 +132,6 @@
     "excuse_other": {
       "type": "string"
     },
-    "branchstatus": {
-      "type": "string"
-    },
     "cmdstatus": {
       "type": "string"
     },
@@ -142,9 +139,6 @@
       "type": "string"
     },
     "fileno": {
-      "type": "string"
-    },
-    "cure": {
       "type": "string"
     },
     "settleaccno": {

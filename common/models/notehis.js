@@ -31,26 +31,41 @@ module.exports = function (Notehis) {
         },
     });
 
-    Notehis.custnotes = function (custnumber, cb) {
+    Notehis.custnotes = function (custnumber, offset, next, cb) {
         var ds = Notehis.dataSource;
         //
-        var total_sql = "Select * from notehis where custnumber = '" + custnumber +"' order by notedate desc";
+        var total_sql = "Select id,owner,custnumber,accnumber,to_char(notedate) notedate, notesrc,noteimp, notemade from notehis where custnumber = '" + custnumber +"' order by id desc offset "+offset+" rows fetch next "+next+" rows only";
         ds.connector.query(total_sql, [], function (err, accounts) {
             if (err) console.error(err);
-            console.log(accounts)
             cb(err, accounts);
         })
-
+    
     };
-
+    
     Notehis.remoteMethod('custnotes', {
-        accepts: {
+        accepts: [
+            {
             arg: 'custnumber',
             type: 'string',
             http: {
                 source: 'query',
             },
         },
+        {
+            arg: 'offset',
+            type: 'number',
+            http: {
+                source: 'query',
+            },
+        },
+        {
+            arg: 'next',
+            type: 'number',
+            http: {
+                source: 'query',
+            },
+        }
+    ],
         returns: {
             arg: 'result',
             type: 'object',

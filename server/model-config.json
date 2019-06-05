@@ -52,7 +52,15 @@
     "dataSource": "oracle",
     "public": true
   },
+  "qcards": {
+    "dataSource": "oracle",
+    "public": true
+  },
   "tbl_q_all": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "watch_stage": {
     "dataSource": "oracle",
     "public": true
   },
@@ -177,6 +185,18 @@
     "public": true
   },
   "notifications": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "qallcards": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "memos": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tcards": {
     "dataSource": "oracle",
     "public": true
   }

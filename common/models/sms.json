@@ -14,6 +14,10 @@
       "type": "string",
       "required": true
     },
+    "accnumber": {
+      "type": "string",
+      "required": true
+    },
     "owner": {
       "type": "string"
     },
@@ -32,6 +36,9 @@
     },
     "telnumber": {
       "type": "string"
+    },
+    "stagedate": {
+      "type": "date"
     }
   },
   "validations": [],

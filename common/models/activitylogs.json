@@ -102,10 +102,10 @@
       }
     },
     "reviewdate": {
-      "type": "date",
+      "type": "string",
       "oracle": {
         "columnName": "REVIEWDATE",
-        "dataType": "DATE",
+        "dataType": "VARCHAR2",
         "dataLength": 40,
         "nullable": "Y"
       }

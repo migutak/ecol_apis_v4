@@ -6,6 +6,12 @@
   "options": {
     "validateUpsert": true
   },
+  "scope": {
+    "include": [
+      "static",
+      "demandsdue"
+    ]
+  },
   "properties": {
     "cardnumber": {
       "type": "string",
@@ -108,16 +114,16 @@
   },
   "validations": [],
   "relations": {
-    "tblcard_static": {
+    "static": {
       "type": "hasOne",
       "model": "tblcard_static",
       "foreignKey": "cardnumber",
       "primaryKey": "cardnumber"
     },
-    "guarantordetails": {
+    "demandsdue": {
       "type": "hasMany",
-      "model": "guarantordetails",
-      "foreignKey": "accnumber",
+      "model": "demandsduecc",
+      "foreignKey": "cardnumber",
       "primaryKey": "cardnumber"
     }
   },

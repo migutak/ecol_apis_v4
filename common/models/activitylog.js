@@ -1,7 +1,13 @@
 'use strict';
-
+var app = require('../../server/server');
 module.exports = function (activitylog) {
     activitylog.action = function (msg, cb) {
+      // save activity
+      activitylog.create(msg, function(err, resp){
+        if (err) console.error(err);
+          // console.log('saved!!!', resp);
+      })
+
     var ds = activitylog.dataSource;
     // add notes
     var notes_sql = "insert into notehis(custnumber, accnumber, notesrc, notemade, owner, noteimp) values ('"+msg.custnumber+"','"+msg.accountnumber+"','"+msg.notesrc+"','"+msg.collectornote+"','"+msg.owner+"','"+msg.noteimp+"')";
@@ -48,4 +54,5 @@ module.exports = function (activitylog) {
       verb: 'post',
     },
   });
+
 };

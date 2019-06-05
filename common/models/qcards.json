@@ -1,16 +1,10 @@
 {
-  "name": "tblcard_static",
-  "plural": "tblcard_static",
+  "name": "qcards",
+  "plural": "qcards",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
-  },
-  "scope": {
-    "include": [
-      "static",
-      "demandsdue"
-    ]
   },
   "properties": {
     "cardnumber": {
@@ -31,10 +25,10 @@
     "ageinmonths": {
       "type": "number"
     },
-    "amountpaid": {
+    "colofficer": {
       "type": "number"
     },
-    "arrstartdate": {
+    "excuse": {
       "type": "string",
       "required": true
     },
@@ -75,7 +69,7 @@
     "exppmnt": {
       "type": "string"
     },
-    "fax": {
+    "reviewdate": {
       "type": "string"
     },
     "lastpaymentdate": {
@@ -102,18 +96,31 @@
     "rpcode": {
       "type": "string"
     },
-    "stagedate": {
+    "cmdstatus": {
       "type": "date"
     },
     "tel": {
       "type": "string"
     },
-    "title": {
+    "employer": {
       "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "tblcard_static": {
+      "type": "hasOne",
+      "model": "tblcard_static",
+      "foreignKey": "cardnumber",
+      "primaryKey": "cardnumber"
+    },
+    "guarantordetails": {
+      "type": "hasMany",
+      "model": "guarantordetails",
+      "foreignKey": "accnumber",
+      "primaryKey": "cardnumber"
+    }
+  },
   "acls": [],
   "methods": {}
 }
