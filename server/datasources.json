@@ -9,6 +9,7 @@
     "user": "ecol",
     "connector": "oracle"
   },
+
   "myEmailDataSource": {
     "name": "myEmailDataSource",
     "connector": "mail",

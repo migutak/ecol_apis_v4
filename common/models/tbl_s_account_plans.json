@@ -1,5 +1,6 @@
 {
-  "name": "ptps",
+  "name": "tbl_s_account_plans",
+  "plural": "tbl_s_account_plans",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,36 +9,25 @@
   "properties": {
     "id": {
       "type": "number",
-      "id": true
+      "id": true,
+      "required": false
     },
     "accnumber": {
-      "type": "string",
-      "required": true
-    },
-    "ptpamount": {
-      "type": "number",
-      "required": true,
-      "default": 0
-    },
-    "met": {
       "type": "string"
     },
-    "paymentdate": {
+    "planid": {
       "type": "string"
     },
-    "arramount": {
-      "type": "number"
-    },
-    "ptpdate": {
+    "actionid": {
       "type": "string"
     },
-    "paymethod": {
+    "updateby": {
       "type": "string"
     },
-    "actiondate": {
-      "type": "date"
+    "completed": {
+      "type": "string"
     },
-    "owner": {
+    "datecompleted": {
       "type": "string"
     }
   },

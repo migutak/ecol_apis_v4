@@ -76,4 +76,34 @@ module.exports = function (Notehis) {
             verb: 'get',
         },
     });
+
+    Notehis.updatenote = function (data, cb) {
+        var ds = Notehis.dataSource;
+        //
+        var update_sql = "update notehis set notemade = '" + data.notemade +"' where id = '" + data.id +"'";
+        ds.connector.query(update_sql, [], function (err, accounts) {
+            if (err) console.error(err);
+            cb(err, accounts);
+        })
+
+    };
+
+    Notehis.remoteMethod('updatenote', {
+        accepts: {
+            arg: 'data',
+            type: 'object',
+            http: {
+                source: 'body',
+            },
+        },
+        returns: {
+            arg: 'result',
+            type: 'object',
+            root: true,
+        },
+        http: {
+            path: '/updatenote',
+            verb: 'post',
+        },
+    });
 };

@@ -27,6 +27,9 @@
     "repaymentamount": {
       "type": "string"
     },
+    "repaymentdate": {
+      "type": "string"
+    },
     "productcode": {
       "type": "number"
     },
@@ -75,16 +78,19 @@
   },
   "validations": [],
   "relations": {
+    "watch": {
+      "type": "hasOne",
+      "model": "watch_static",
+      "foreignKey": "accnumber"
+    },
     "guarantors": {
       "type": "hasMany",
       "model": "guarantordetails",
       "foreignKey": "accnumber"
-    },
-    "demandsdues": {
-      "type": "hasMany",
-      "model": "demandsdue",
-      "foreignKey": "accnumber"
     }
+  },
+  "scope": {
+    "include": ["watch","guarantors"]
   },
   "acls": [],
   "methods": {}

@@ -199,5 +199,37 @@
   "tcards": {
     "dataSource": "oracle",
     "public": true
+  },
+  "branches": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cards_watch_stage": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "cards_watch_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "watch_static": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_plans": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_actions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_plan_actions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_account_plans": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

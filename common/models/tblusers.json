@@ -19,8 +19,7 @@
       "type": "string"
     },
     "lastname": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "active": {
       "type": "string",

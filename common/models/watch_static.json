@@ -1,43 +1,45 @@
 {
-  "name": "ptps",
+  "name": "watch_static",
+  "plural": "watch_static",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "id": true
-    },
     "accnumber": {
       "type": "string",
+      "id": true,
       "required": true
     },
-    "ptpamount": {
-      "type": "number",
-      "required": true,
-      "default": 0
-    },
-    "met": {
+    "allocateflagdate": {
       "type": "string"
     },
-    "paymentdate": {
+    "colofficer": {
       "type": "string"
     },
-    "arramount": {
-      "type": "number"
-    },
-    "ptpdate": {
+    "allocateflag": {
       "type": "string"
     },
-    "paymethod": {
+    "section": {
       "type": "string"
     },
-    "actiondate": {
-      "type": "date"
+    "excuse": {
+      "type": "string"
     },
-    "owner": {
+    "routetostate": {
+      "type": "string"
+    },
+    "lastactiondate": {
+      "type": "string"
+    },
+    "cmdstatus": {
+      "type": "string"
+    },
+    "rfdother": {
+      "type": "string"
+    },
+    "reviewdate": {
       "type": "string"
     }
   },
