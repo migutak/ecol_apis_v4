@@ -1,24 +1,21 @@
 {
-  "name": "tbl_s_plan_actions",
-  "plural": "tbl_s_plan_actions",
+  "name": "tbl_s_accounts",
+  "plural": "tbl_s_accounts",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
+    "accnumber": {
+      "type": "string",
       "id": true,
-      "required": false
+      "required": true
     },
     "planid": {
       "type": "string"
     },
-    "actionid": {
-      "type": "string"
-    },
-    "actiontitle": {
+    "dateupdated": {
       "type": "string"
     },
     "updateby": {

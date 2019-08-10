@@ -1,6 +1,6 @@
 {
-  "name": "tbl_s_plan_actions",
-  "plural": "tbl_s_plan_actions",
+  "name": "tbl_s_planmemos",
+  "plural": "tbl_s_planmemos",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -15,10 +15,10 @@
     "planid": {
       "type": "string"
     },
-    "actionid": {
+    "plantitle": {
       "type": "string"
     },
-    "actiontitle": {
+    "memogroup": {
       "type": "string"
     },
     "updateby": {

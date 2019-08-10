@@ -1,6 +1,6 @@
 {
   "oracle": {
-    "host": "192.168.78.149",
+    "host": "192.168.78.148",
     "port": 1521,
     "database": "ecol",
     "password": "ecol",

@@ -231,5 +231,13 @@
   "tbl_s_account_plans": {
     "dataSource": "oracle",
     "public": true
+  },
+  "tbl_s_planmemos": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "tbl_s_accounts": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

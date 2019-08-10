@@ -21,6 +21,9 @@
     "actionid": {
       "type": "string"
     },
+    "actiontitle": {
+      "type": "string"
+    },
     "updateby": {
       "type": "string"
     },
