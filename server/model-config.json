@@ -239,5 +239,45 @@
   "tbl_s_accounts": {
     "dataSource": "oracle",
     "public": true
+  },
+  "plan_remedialofferings": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_customerproposals": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_ability": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_actions": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "qview": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_swot": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_problemdefinition": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_background": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "plan_ptpplans": {
+    "dataSource": "oracle",
+    "public": true
+  },
+  "custview": {
+    "dataSource": "oracle",
+    "public": true
   }
 }

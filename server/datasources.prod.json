@@ -1,23 +1,13 @@
 {
   "oracle": {
-    "host": "192.168.78.148",
-    "port": 1521,
-    "database": "ecol",
-    "password": "ecol",
+    "host": "172.16.210.14",
+    "port": 1564,
+    "database": "ecoltst",
+    "password": "L#TTc011",
     "name": "oracle",
     "tns": "",
     "user": "ecol",
     "connector": "oracle"
-  },
-  "mysql": {
-    "host": "68.183.63.158",
-    "port": 3306,
-    "database": "ecol",
-    "password": "ecol",
-    "name": "mysql",
-    "tns": "",
-    "user": "ecol",
-    "connector": "mysql"
   },
 
   "myEmailDataSource": {

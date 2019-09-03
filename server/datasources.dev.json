@@ -9,14 +9,15 @@
     "user": "ecol",
     "connector": "oracle"
   },
+
   "mysql": {
-    "host": "68.183.63.158",
+    "host": "localhost",
     "port": 3306,
     "database": "ecol",
-    "password": "ecol",
+    "password": "root",
     "name": "mysql",
     "tns": "",
-    "user": "ecol",
+    "user": "root",
     "connector": "mysql"
   },
 
